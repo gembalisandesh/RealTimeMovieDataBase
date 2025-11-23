@@ -11,6 +11,8 @@ A modern, feature-rich iOS movie browsing application built with SwiftUI that in
 ### 🎥 Movie Browsing & Discovery
 - **Popular Movies Grid**: Browse trending movies in a beautiful, responsive grid layout
 - **Real-time Search**: Search for any movie with intelligent debouncing for optimal performance
+- **Floating Search Bar**: Always-visible glassmorphic search bar that stays on top while scrolling.
+- **Dark Mode Support**: Adaptive UI that automatically adjusts colors for light and dark system themes.
 - **Movie Details**: Comprehensive movie information including:
   - High-quality posters and backdrops
   - Plot overview and synopsis
