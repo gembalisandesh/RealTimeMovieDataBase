@@ -173,17 +173,6 @@ This app uses [The Movie Database (TMDb) API](https://www.themoviedb.org/documen
 - **Search Performance**: Optimized with debouncing mechanism
 - **Tab Bar Visibility**: Properly managed across navigation stack
 
-## 🔮 Future Enhancements
-
-- [ ] Genre filtering
-- [ ] Movie recommendations
-- [ ] User ratings and reviews
-- [ ] Watchlist functionality
-- [ ] Dark mode optimization
-- [ ] iPad support with adaptive layouts
-- [ ] Offline mode
-- [ ] Share movie details
-
 ## 📄 License
 
 This project is available for personal and educational use.
