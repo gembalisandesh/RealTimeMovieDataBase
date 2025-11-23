@@ -11,6 +11,7 @@ struct MovieCardView: View {
     let movie: Movie
     let isFavorite: Bool
     let onFavoriteTap: () -> Void
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -89,6 +90,24 @@ struct MovieCardView: View {
             .background(Color(.systemBackground))
         }
         .cornerRadius(12)
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(
+                    LinearGradient(
+                        colors: [
+                            colorScheme == .dark
+                                ? Color.white.opacity(0.2)
+                                : Color.black.opacity(0.1),
+                            colorScheme == .dark
+                                ? Color.white.opacity(0.1)
+                                : Color.black.opacity(0.05)
+                        ],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ),
+                    lineWidth: 1
+                )
+        )
         .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
         .opacity(isAnimating ? 1 : 0)
         .scaleEffect(isAnimating ? 1 : 0.9)
